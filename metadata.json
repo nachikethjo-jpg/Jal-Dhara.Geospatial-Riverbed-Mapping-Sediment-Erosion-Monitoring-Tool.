@@ -1,0 +1,6 @@
+{
+  "name": "Jal-Dhara: Geospatial Riverbed & Sediment Monitoring",
+  "description": "Interactive 3D bathymetric mapping and geospatial monitoring tool for tracking riverbed sediment erosion, deposition, and channel morphometry across Indian river basins.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
