@@ -57,9 +57,9 @@ export default function App() {
   const [verticalExaggeration, setVerticalExaggeration] = useState<number>(2.0);
   const [waterOpacity, setWaterOpacity] = useState<number>(0.75);
 
-  const apiKey =
-    import.meta.env.VITE_GOOGLE_MAPS_API_KEY ||
-    'AIzaSyBSyntZl-HsgqRF1XdfKASDw-QuH2yaxw0';
+  // Browser keys are visible by design; restrict this key by HTTP referrer and API.
+  // Never commit a fallback key. Configure VITE_GOOGLE_MAPS_API_KEY at build time.
+  const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY || "";
 
   const stats = useMemo(() => riverStats(river), [river]);
   const [minYear, maxYear] = river.era;
